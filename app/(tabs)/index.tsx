@@ -9,7 +9,7 @@ interface Message {
   type: "user" | "assistant";
 }
 
-const genAI = new GoogleGenerativeAI("GEMINI_API_KEY");
+const genAI = new GoogleGenerativeAI("AIzaSyCVo0ngnCPybmvAwIx0TWcjD8LKT0QZYoo");
 
 export default function index() {
   const exampleMessages: Message[] = [

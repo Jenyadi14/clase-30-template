@@ -1,10 +1,11 @@
+
 {
   "expo": {
     "name": "clase-30-template",
     "slug": "clase-30-template",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/cne.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -27,8 +28,8 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
+          "image": "./assets/images/cne.png",
+          "imageWidth": 500,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
