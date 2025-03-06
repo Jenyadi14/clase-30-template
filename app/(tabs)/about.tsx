@@ -1,34 +1,51 @@
-import { View, Text, Linking } from 'react-native'
+import { View, Text, Linking } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import UserAvatar from '@/components/UserAvatar';
 
-export default function about() {
+export default function About() {
   return (
-    <View className='flex flex-col h-2/3 justify-center items-center p-4'>
-      <UserAvatar name='@Chris' />
-      <Text className='text-xl'>
-        Sobre mi
-      </Text>
+    <View className="flex flex-col h-2/3 justify-center items-center p-4">
+      <UserAvatar name="@Jenyadi" />
+      
       <Text>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia amet molestiae voluptates cupiditate! Unde, illum id dolores error iste culpa qui voluptas quos reiciendis, pariatur ut eaque sit commodi ad.
-        Expedita deserunt consequatur, voluptatibus sunt quam eos voluptas! Quas libero tempora molestiae inventore quod reiciendis ducimus deserunt eos doloremque explicabo, similique sequi optio quis, ad perspiciatis omnis. Voluptates, ratione id!
+        Soy Jenny Rosero estoy en decimo Semestre, de la carrera de ingenieria en sistemas !
       </Text>
+
+      {/* Sección de redes sociales */}
       <View>
-        <View className='flex flex-row items-center ml-4 mt-4'>
+        {/* GitHub */}
+        <View className="flex flex-row items-center ml-4 mt-4">
           <Ionicons name="logo-github" size={35} color="black" />
-          <Text className='text-md text-blue-500 font-bold' onPress={(e) => {
-            e.preventDefault()
-            Linking.openURL('https://github.com/LuisLDA/clase-30-template')
-          }}>@Chris</Text>
+          <Text
+            className="text-md text-blue-500 font-bold ml-2"
+            onPress={() => Linking.openURL('https://github.com/Jenyadi14/clase-30-template.git')}
+          >
+            @Jenyadi
+          </Text>
         </View>
-        <View className='flex flex-row items-center ml-4 mt-4'>
+
+        {/* LinkedIn */}
+        <View className="flex flex-row items-center ml-4 mt-4">
           <Ionicons name="logo-linkedin" size={35} color="blue" />
-          <Text className='text-md text-blue-500 font-bold' onPress={(e) => {
-            e.preventDefault()
-            Linking.openURL('https://github.com/LuisLDA/clase-30-template')
-          }}>@Chris</Text>
+          <Text
+            className="text-md text-blue-500 font-bold ml-2"
+            onPress={() => Linking.openURL('https://www.linkedin.com/in/jenny-rosero-4a0317204')}
+          >
+            Jenny Rosero
+          </Text>
+        </View>
+
+        {/* Twitch */}
+        <View className="flex flex-row items-center ml-4 mt-4">
+          <Ionicons name="logo-twitch" size={35} color="purple" />
+          <Text
+            className="text-md text-purple-500 font-bold ml-2"
+            onPress={() => Linking.openURL('https://www.twitch.tv/?lang=es-ES')}
+          >
+            Twitch
+          </Text>
         </View>
       </View>
     </View>
-  )
+  );
 }

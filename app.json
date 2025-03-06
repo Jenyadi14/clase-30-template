@@ -4,8 +4,8 @@
     "slug": "clase-30-template",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "icon": "./assets/images/cne.png",    
+    "scheme": "myapp",    
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
